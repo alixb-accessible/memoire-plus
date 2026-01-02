@@ -4,7 +4,7 @@
 
 Mémoire+ est une application web gratuite et open source qui permet de documenter ses activités quotidiennes avec date, horaires, photos et descriptions détaillées. Idéal pour garder une trace de vos actions, prouver votre engagement, ou simplement vous souvenir.
 
----
+
 
 ## Fonctionnalités
 
@@ -38,7 +38,7 @@ Mémoire+ est une application web gratuite et open source qui permet de document
 - Persistance : vos données ne sont jamais perdues
 - Confidentialité totale.
 
----
+
 
 ## Cas d'usage
 

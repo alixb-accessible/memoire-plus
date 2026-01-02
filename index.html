@@ -15,7 +15,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Lexend', sans-serif;
             background: linear-gradient(135deg, 
@@ -29,7 +28,6 @@
             min-height: 100vh;
             padding: 20px;
         }
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -38,7 +36,6 @@
             padding: 30px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
@@ -46,14 +43,12 @@
             color: #1f2937;
             text-align: center;
         }
-
         .subtitle {
             text-align: center;
             color: #6b7280;
             margin-bottom: 30px;
             font-size: 1.1rem;
         }
-
         .folder-section {
             background: #f0f9ff;
             padding: 20px;
@@ -61,26 +56,17 @@
             margin-bottom: 25px;
             border: 2px solid #3b82f6;
         }
-
-        .folder-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
         .folder-header h2 {
             color: #1f2937;
             font-size: 1.5rem;
+            margin-bottom: 15px;
         }
-
         .folder-select-group {
             display: flex;
             gap: 10px;
             align-items: center;
             flex-wrap: wrap;
         }
-
         select {
             padding: 10px 15px;
             border: 2px solid #d1d5db;
@@ -91,12 +77,10 @@
             cursor: pointer;
             min-width: 200px;
         }
-
         select:focus {
             outline: none;
             border-color: #3b82f6;
         }
-
         .btn-small {
             padding: 10px 20px;
             font-family: 'Lexend', sans-serif;
@@ -106,34 +90,48 @@
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s;
-        }
-
-        .btn-add-folder {
             background: #22c55e;
             color: white;
         }
-
-        .btn-add-folder:hover {
+        .btn-small:hover {
             background: #16a34a;
         }
-
+        .download-section {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 2px solid #fbbf24;
+        }
+        .download-section h3 {
+            color: #92400e;
+            margin-bottom: 15px;
+        }
+        .download-filters {
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .download-filters > div {
+            flex: 1;
+            min-width: 200px;
+        }
         .form-section {
             background: #f9fafb;
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 30px;
         }
-
         .form-group {
             margin-bottom: 20px;
         }
-
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
+            margin-bottom: 20px;
         }
-
         label {
             display: block;
             font-weight: 600;
@@ -141,7 +139,6 @@
             color: #374151;
             font-size: 1rem;
         }
-
         input[type="date"],
         input[type="time"],
         input[type="text"],
@@ -155,36 +152,31 @@
             font-size: 1rem;
             transition: border-color 0.3s;
         }
-
-        input[type="date"]:focus,
-        input[type="time"]:focus,
-        input[type="text"]:focus,
-        textarea:focus {
+        input:focus, textarea:focus {
             outline: none;
             border-color: #3b82f6;
         }
-
         textarea {
             min-height: 120px;
             resize: vertical;
         }
-
+        small {
+            display: block;
+            margin-top: 5px;
+        }
         .activity-type-group {
             display: flex;
             gap: 10px;
             align-items: flex-end;
         }
-
         .activity-type-group > div:first-child {
             flex: 1;
         }
-
         .button-group {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-
         button {
             flex: 1;
             min-width: 200px;
@@ -197,57 +189,25 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-
         .btn-primary {
             background: #3b82f6;
             color: white;
         }
-
         .btn-primary:hover {
             background: #2563eb;
             transform: translateY(-2px);
         }
-
         .btn-secondary {
             background: #22c55e;
             color: white;
         }
-
         .btn-secondary:hover {
             background: #16a34a;
             transform: translateY(-2px);
         }
-
-        .download-section {
-            background: #fef3c7;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            border: 2px solid #fbbf24;
-        }
-
-        .download-section h3 {
-            color: #92400e;
-            margin-bottom: 15px;
-        }
-
-        .download-filters {
-            display: flex;
-            gap: 15px;
-            align-items: flex-end;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-        }
-
-        .download-filters > div {
-            flex: 1;
-            min-width: 200px;
-        }
-
         .entries-section {
             margin-top: 30px;
         }
-
         .entries-header {
             display: flex;
             justify-content: space-between;
@@ -256,25 +216,15 @@
             flex-wrap: wrap;
             gap: 15px;
         }
-
         .entries-header h2 {
             font-size: 1.8rem;
             color: #1f2937;
         }
-
         .filter-group {
             display: flex;
             gap: 10px;
             align-items: center;
         }
-
-        .filter-group input {
-            padding: 8px 12px;
-            border: 2px solid #d1d5db;
-            border-radius: 6px;
-            font-family: 'Lexend', sans-serif;
-        }
-
         .entry-card {
             background: #ffffff;
             border: 2px solid #e5e7eb;
@@ -283,32 +233,28 @@
             margin-bottom: 15px;
             transition: all 0.3s;
         }
-
         .entry-card:hover {
             border-color: #3b82f6;
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
         }
-
         .entry-header {
             display: flex;
             justify-content: space-between;
             align-items: start;
             margin-bottom: 12px;
         }
-
         .entry-date {
             font-weight: 600;
             color: #3b82f6;
             font-size: 1.1rem;
         }
-
         .entry-meta {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            margin-bottom: 12px;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
-
         .entry-type {
             display: inline-block;
             background: #dbeafe;
@@ -318,7 +264,6 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
-
         .entry-duration {
             display: inline-block;
             background: #fef3c7;
@@ -328,7 +273,6 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
-
         .delete-btn {
             background: #dc2626;
             color: white;
@@ -340,18 +284,15 @@
             font-size: 0.9rem;
             min-width: auto;
         }
-
         .delete-btn:hover {
             background: #b91c1c;
         }
-
         .entry-activity {
             color: #374151;
             line-height: 1.6;
             margin-bottom: 12px;
             white-space: pre-wrap;
         }
-
         .entry-image {
             max-width: 300px;
             max-height: 200px;
@@ -359,20 +300,11 @@
             margin-top: 10px;
             object-fit: cover;
         }
-
         .empty-state {
             text-align: center;
             padding: 60px 20px;
             color: #6b7280;
         }
-
-        .empty-state svg {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 20px;
-            opacity: 0.5;
-        }
-
         .success-message {
             background: #d1fae5;
             color: #065f46;
@@ -382,7 +314,6 @@
             text-align: center;
             font-weight: 500;
         }
-
         .modal {
             display: none;
             position: fixed;
@@ -395,188 +326,106 @@
             align-items: center;
             justify-content: center;
         }
-
         .modal.active {
             display: flex;
         }
-
         .modal-content {
             background: white;
             padding: 30px;
             border-radius: 16px;
             max-width: 500px;
             width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
         }
-
         .modal-content h3 {
             margin-bottom: 20px;
             color: #1f2937;
         }
-
         .modal-buttons {
             display: flex;
             gap: 10px;
             margin-top: 20px;
         }
-
         .btn-cancel {
             background: #6b7280;
             color: white;
         }
-
         .btn-cancel:hover {
             background: #4b5563;
         }
-
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .button-group {
-                flex-direction: column;
-            }
-
-            button {
-                min-width: 100%;
-            }
-
-            .folder-select-group {
-                width: 100%;
-            }
-
-            select {
-                width: 100%;
-            }
-
-            .download-filters {
-                flex-direction: column;
-            }
-
-            .download-filters > div {
-                width: 100%;
-            }
+            h1 { font-size: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .button-group { flex-direction: column; }
+            button { min-width: 100%; }
+            select { width: 100%; }
+            .download-filters { flex-direction: column; }
+            .download-filters > div { width: 100%; }
         }
     </style>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <h1>Mémoire+</h1>
         <p class="subtitle">Votre journal d'activités personnel et accessible</p>
-
         <div id="successMessage" style="display: none;" class="success-message"></div>
-
-        <!-- Section Dossier -->
+        
         <div class="folder-section">
-            <div class="folder-header">
-                <h2>Dossier actif</h2>
-            </div>
+            <div class="folder-header"><h2>Dossier actif</h2></div>
             <div class="folder-select-group">
-                <select id="folderSelect">
-                    <option value="general">📁 Général</option>
-                </select>
-                <button type="button" class="btn-small btn-add-folder" onclick="openNewFolderModal()">+ Nouveau dossier</button>
+                <select id="folderSelect"><option value="general">📁 Général</option></select>
+                <button type="button" class="btn-small" onclick="openNewFolderModal()">+ Nouveau dossier</button>
             </div>
         </div>
 
-        <!-- Section Téléchargement -->
         <div class="download-section">
-            <h3>📥 Télécharger mes données</h3>
+            <h3>Télécharger mes données</h3>
             <div class="download-filters">
-                <div>
-                    <label for="downloadFolder">Dossier</label>
-                    <select id="downloadFolder">
-                        <option value="current">Dossier actuel</option>
-                        <option value="all">Tous les dossiers</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="downloadActivity">Type d'activité</label>
-                    <select id="downloadActivity">
-                        <option value="all">Toutes les activités</option>
-                    </select>
-                </div>
-                <div style="display: flex; align-items: flex-end;">
-                    <button type="button" class="btn-secondary" onclick="downloadFilteredData()" style="min-width: auto;">Télécharger</button>
-                </div>
+                <div><label for="downloadFolder">Dossier</label><select id="downloadFolder"><option value="current">Dossier actuel</option><option value="all">Tous les dossiers</option></select></div>
+                <div><label for="downloadActivity">Type d'activité</label><select id="downloadActivity"><option value="all">Toutes les activités</option></select></div>
+                <div style="display:flex;align-items:flex-end;"><button type="button" class="btn-secondary" onclick="downloadFilteredData()" style="min-width:auto;">Télécharger</button></div>
             </div>
         </div>
 
-        <!-- Formulaire -->
         <div class="form-section">
             <form id="activityForm">
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="activityDate">Date de l'activité *</label>
-                        <input type="date" id="activityDate" required>
-                    </div>
+                    <div class="form-group"><label for="activityDate">Date de l'activité *</label><input type="date" id="activityDate" required></div>
                     <div class="form-group">
                         <label for="activityType">Type d'activité *</label>
                         <div class="activity-type-group">
-                            <div>
-                                <select id="activityType" required>
-                                    <option value="">-- Choisir --</option>
-                                </select>
-                            </div>
-                            <button type="button" class="btn-small btn-add-folder" onclick="openNewActivityModal()">+</button>
+                            <div><select id="activityType" required><option value="">-- Choisir --</option></select></div>
+                            <button type="button" class="btn-small" onclick="openNewActivityModal()">+</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="startTime">Heure de début</label>
-                        <input type="time" id="startTime">
-                    </div>
-                    <div class="form-group">
-                        <label for="endTime">Heure de fin</label>
-                        <input type="time" id="endTime">
-                    </div>
+                    <div class="form-group"><label for="startTime">Heure de début (optionnel)</label><input type="time" id="startTime"></div>
+                    <div class="form-group"><label for="endTime">Heure de fin (optionnel)</label><input type="time" id="endTime"></div>
                 </div>
-
                 <div class="form-group">
-                    <label for="activityDescription">Description détaillée *</label>
-                    <textarea id="activityDescription" required placeholder="Décrivez votre activité en détail..."></textarea>
+                    <label for="manualDuration">Ou volume horaire total (ex: 3h, 2h30, 45min)</label>
+                    <input type="text" id="manualDuration" placeholder="Ex: 3h, 2h30, 45min">
+                    <small style="color: #6b7280; font-size: 0.9rem;">Si vous remplissez ce champ, il sera prioritaire sur les heures de début/fin</small>
                 </div>
-
-                <div class="form-group">
-                    <label for="activityPhoto">Photo (optionnel)</label>
-                    <input type="file" id="activityPhoto" accept="image/*">
-                </div>
-
-                <div class="button-group">
-                    <button type="submit" class="btn-primary">Enregistrer l'activité</button>
-                </div>
+                <div class="form-group"><label for="activityDescription">Description détaillée *</label><textarea id="activityDescription" required placeholder="Décrivez votre activité en détail..."></textarea></div>
+                <div class="form-group"><label for="activityPhoto">Photo (optionnel)</label><input type="file" id="activityPhoto" accept="image/*"></div>
+                <div class="button-group"><button type="submit" class="btn-primary">Enregistrer l'activité</button></div>
             </form>
         </div>
 
-        <!-- Liste des activités -->
         <div class="entries-section">
             <div class="entries-header">
                 <h2>Mes activités</h2>
-                <div class="filter-group">
-                    <label for="filterDate" style="margin: 0;">Filtrer par date:</label>
-                    <input type="date" id="filterDate">
-                </div>
+                <div class="filter-group"><label for="filterDate" style="margin:0;">Filtrer par date:</label><input type="date" id="filterDate"></div>
             </div>
             <div id="entriesList"></div>
         </div>
     </div>
 
-    <!-- Modal nouveau dossier -->
     <div id="newFolderModal" class="modal">
         <div class="modal-content">
             <h3>Créer un nouveau dossier</h3>
-            <div class="form-group">
-                <label for="newFolderName">Nom du dossier</label>
-                <input type="text" id="newFolderName" placeholder="Ex: Activités syndicales, Tâches ménagères...">
-            </div>
+            <div class="form-group"><label for="newFolderName">Nom du dossier</label><input type="text" id="newFolderName" placeholder="Ex: Activités syndicales, Tâches ménagères..."></div>
             <div class="modal-buttons">
                 <button class="btn-cancel" onclick="closeNewFolderModal()">Annuler</button>
                 <button class="btn-primary" onclick="createNewFolder()">Créer</button>
@@ -584,672 +433,18 @@
         </div>
     </div>
 
-    <!-- Modal nouvelle activité -->
     <div id="newActivityModal" class="modal">
         <div class="modal-content">
             <h3>Créer un nouveau type d'activité</h3>
-            <div class="form-group">
-                <label for="newActivityName">Nom de l'activité</label>
-                <input type="text" id="newActivityName" placeholder="Ex: Réunion syndicale, Ménage cuisine...">
-            </div>
+            <div class="form-group"><label for="newActivityName">Nom de l'activité</label><input type="text" id="newActivityName" placeholder="Ex: Réunion syndicale, Ménage cuisine..."></div>
             <div class="modal-buttons">
                 <button class="btn-cancel" onclick="closeNewActivityModal()">Annuler</button>
                 <button class="btn-primary" onclick="createNewActivity()">Créer</button>
             </div>
         </div>
     </div>
+
 <script>
-        // Initialize data structures
-        let folders = ['general'];
-        let currentFolder = 'general';
-        let activityTypes = {
-            'general': ['Réunion', 'Formation', 'Événement', 'Tâche administrative', 'Autre']
-        };
-        let entries = {};
-
-        // Set today's date as default
-        document.getElementById('activityDate').valueAsDate = new Date();
-
-        // Initialize app
-        async function initApp() {
-            await loadFolders();
-            await loadActivityTypes();
-            await loadEntries();
-            updateFolderSelect();
-            updateActivityTypeSelect();
-            updateDownloadFilters();
-            displayEntries();
-        }
-
-        // ============ STORAGE FUNCTIONS ============
-        async function loadFolders() {
-            try {
-                const result = await window.storage.get('folders');
-                if (result && result.value) {
-                    folders = JSON.parse(result.value);
-                }
-            } catch (error) {
-                console.log('Using default folders');
-            }
-        }
-
-        async function saveFolders() {
-            try {
-                await window.storage.set('folders', JSON.stringify(folders));
-            } catch (error) {
-                console.error('Error saving folders:', error);
-            }
-        }
-
-        async function loadActivityTypes() {
-            try {
-                const result = await window.storage.get('activityTypes');
-                if (result && result.value) {
-                    activityTypes = JSON.parse(result.value);
-                }
-            } catch (error) {
-                console.log('Using default activity types');
-            }
-        }
-
-        async function saveActivityTypes() {
-            try {
-                await window.storage.set('activityTypes', JSON.stringify(activityTypes));
-            } catch (error) {
-                console.error('Error saving activity types:', error);
-            }
-        }
-
-        async function loadEntries() {
-            try {
-                const result = await window.storage.list('entry:');
-                if (result && result.keys) {
-                    entries = {};
-                    for (const key of result.keys) {
-                        try {
-                            const data = await window.storage.get(key);
-                            if (data && data.value) {
-                                const entry = JSON.parse(data.value);
-                                if (!entries[entry.folder]) {
-                                    entries[entry.folder] = [];
-                                }
-                                entries[entry.folder].push(entry);
-                            }
-                        } catch (e) {
-                            console.log('Entry not found:', key);
-                        }
-                    }
-                    // Sort entries in each folder
-                    Object.keys(entries).forEach(folder => {
-                        entries[folder].sort((a, b) => new Date(b.date) - new Date(a.date));
-                    });
-                }
-            } catch (error) {
-                console.log('No entries yet');
-            }
-        }
-
-        async function saveEntry(entry) {
-            try {
-                await window.storage.set(`entry:${entry.id}`, JSON.stringify(entry));
-                return true;
-            } catch (error) {
-                console.error('Error saving entry:', error);
-                return false;
-            }
-        }
-
-        async function deleteEntry(id, folder) {
-            try {
-                await window.storage.delete(`entry:${id}`);
-                return true;
-            } catch (error) {
-                console.error('Error deleting entry:', error);
-                return false;
-            }
-        }
-
-        // ============ UI UPDATE FUNCTIONS ============
-        function updateFolderSelect() {
-            const select = document.getElementById('folderSelect');
-            select.innerHTML = folders.map(folder => 
-                `<option value="${folder}" ${folder === currentFolder ? 'selected' : ''}>
-                    📁 ${folder.charAt(0).toUpperCase() + folder.slice(1)}
-                </option>`
-            ).join('');
-        }
-
-        function updateActivityTypeSelect() {
-            const select = document.getElementById('activityType');
-            const types = activityTypes[currentFolder] || [];
-            select.innerHTML = '<option value="">-- Choisir --</option>' +
-                types.map(type => `<option value="${type}">${type}</option>`).join('');
-        }
-
-        function updateDownloadFilters() {
-            // Update folder dropdown
-            const folderSelect = document.getElementById('downloadFolder');
-            const currentOption = `<option value="current">Dossier actuel (${currentFolder.charAt(0).toUpperCase() + currentFolder.slice(1)})</option>`;
-            const allOption = '<option value="all">Tous les dossiers</option>';
-            const specificFolders = folders.map(f => 
-                `<option value="${f}">📁 ${f.charAt(0).toUpperCase() + f.slice(1)}</option>`
-            ).join('');
-            folderSelect.innerHTML = currentOption + allOption + specificFolders;
-
-            // Update activity type dropdown
-            const activitySelect = document.getElementById('downloadActivity');
-            const allTypes = new Set();
-            Object.values(activityTypes).forEach(types => {
-                types.forEach(type => allTypes.add(type));
-            });
-            activitySelect.innerHTML = '<option value="all">Toutes les activités</option>' +
-                Array.from(allTypes).sort().map(type => 
-                    `<option value="${type}">${type}</option>`
-                ).join('');
-        }
-
-        // ============ FOLDER MANAGEMENT ============
-        document.getElementById('folderSelect').addEventListener('change', function(e) {
-            currentFolder = e.target.value;
-            updateActivityTypeSelect();
-            updateDownloadFilters();
-            displayEntries();
-        });
-
-        function openNewFolderModal() {
-            document.getElementById('newFolderModal').classList.add('active');
-            document.getElementById('newFolderName').value = '';
-            document.getElementById('newFolderName').focus();
-        }
-
-        function closeNewFolderModal() {
-            document.getElementById('newFolderModal').classList.remove('active');
-        }
-
-        async function createNewFolder() {
-            const name = document.getElementById('newFolderName').value.trim();
-            if (!name) {
-                alert('Veuillez entrer un nom de dossier');
-                return;
-            }
-            const folderKey = name.toLowerCase().replace(/\s+/g, '_');
-            if (folders.includes(folderKey)) {
-                alert('Ce dossier existe déjà');
-                return;
-            }
-            folders.push(folderKey);
-            activityTypes[folderKey] = ['Activité'];
-            await saveFolders();
-            await saveActivityTypes();
-            currentFolder = folderKey;
-            updateFolderSelect();
-            updateActivityTypeSelect();
-            updateDownloadFilters();
-            closeNewFolderModal();
-            showSuccess('✓ Nouveau dossier créé !');
-        }
-
-        // ============ ACTIVITY TYPE MANAGEMENT ============
-        function openNewActivityModal() {
-            document.getElementById('newActivityModal').classList.add('active');
-            document.getElementById('newActivityName').value = '';
-            document.getElementById('newActivityName').focus();
-        }
-
-        function closeNewActivityModal() {
-            document.getElementById('newActivityModal').classList.remove('active');
-        }
-
-        async function createNewActivity() {
-            const name = document.getElementById('newActivityName').value.trim();
-            if (!name) {
-                alert('Veuillez entrer un nom d\'activité');
-                return;
-            }
-            if (!activityTypes[currentFolder]) {
-                activityTypes[currentFolder] = [];
-            }
-            if (activityTypes[currentFolder].includes(name)) {
-                alert('Cette activité existe déjà');
-                return;
-            }
-            activityTypes[currentFolder].push(name);
-            await saveActivityTypes();
-            updateActivityTypeSelect();
-            updateDownloadFilters();
-            document.getElementById('activityType').value = name;
-            closeNewActivityModal();
-            showSuccess('✓ Nouvelle activité créée !');
-        }
-// ============ DISPLAY FUNCTIONS ============
-        function calculateDuration(startTime, endTime) {
-            if (!startTime || !endTime) return null;
-            
-            const [startH, startM] = startTime.split(':').map(Number);
-            const [endH, endM] = endTime.split(':').map(Number);
-            
-            const startMinutes = startH * 60 + startM;
-            const endMinutes = endH * 60 + endM;
-            
-            let diffMinutes = endMinutes - startMinutes;
-            if (diffMinutes < 0) diffMinutes += 24 * 60; // Handle overnight
-            
-            const hours = Math.floor(diffMinutes / 60);
-            const minutes = diffMinutes % 60;
-            
-            if (hours === 0) return `${minutes}min`;
-            if (minutes === 0) return `${hours}h`;
-            return `${hours}h${minutes.toString().padStart(2, '0')}`;
-        }
-
-        function formatDuration(duration) {
-            if (!duration) return '';
-            return `⏱️ ${duration}`;
-        }
-
-        function displayEntries(filterDate = null) {
-            const entriesList = document.getElementById('entriesList');
-            const folderEntries = entries[currentFolder] || [];
-            let filteredEntries = folderEntries;
-
-            if (filterDate) {
-                filteredEntries = folderEntries.filter(entry => entry.date === filterDate);
-            }
-
-            if (filteredEntries.length === 0) {
-                entriesList.innerHTML = `
-                    <div class="empty-state">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <p style="font-size: 1.2rem; margin-bottom: 10px;">Aucune activité dans ce dossier</p>
-                        <p>Commencez par ajouter votre première activité</p>
-                    </div>
-                `;
-                return;
-            }
-
-            entriesList.innerHTML = filteredEntries.map(entry => `
-                <div class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <div class="entry-date">${formatDate(entry.date)}</div>
-                            <div class="entry-meta">
-                                <span class="entry-type">${entry.activityType}</span>
-                                ${entry.duration ? `<span class="entry-duration">${formatDuration(entry.duration)}</span>` : ''}
-                            </div>
-                            ${entry.startTime || entry.endTime ? `
-                                <div style="color: #6b7280; font-size: 0.9rem; margin-top: 5px;">
-                                    ${entry.startTime ? `Début: ${entry.startTime}` : ''} 
-                                    ${entry.startTime && entry.endTime ? ' | ' : ''}
-                                    ${entry.endTime ? `Fin: ${entry.endTime}` : ''}
-                                </div>
-                            ` : ''}
-                        </div>
-                        <button class="delete-btn" onclick="handleDelete('${entry.id}', '${entry.folder}')">Supprimer</button>
-                    </div>
-                    <div class="entry-activity">${entry.activity}</div>
-                    ${entry.photo ? `<img src="${entry.photo}" alt="Photo de l'activité" class="entry-image">` : ''}
-                </div>
-            `).join('');
-        }
-
-        function formatDate(dateString) {
-            const date = new Date(dateString + 'T00:00:00');
-            return date.toLocaleDateString('fr-FR', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            });
-        }
-
-        function showSuccess(message) {
-            const successDiv = document.getElementById('successMessage');
-            successDiv.textContent = message;
-            successDiv.style.display = 'block';
-            setTimeout(() => {
-                successDiv.style.display = 'none';
-            }, 3000);
-        }
-
-        // ============ FORM SUBMISSION ============
-        document.getElementById('activityForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-
-            const date = document.getElementById('activityDate').value;
-            const activityType = document.getElementById('activityType').value;
-            const activity = document.getElementById('activityDescription').value;
-            const startTime = document.getElementById('startTime').value;
-            const endTime = document.getElementById('endTime').value;
-            const photoInput = document.getElementById('activityPhoto');
-
-            if (!activityType) {
-                alert('Veuillez choisir ou créer un type d\'activité');
-                return;
-            }
-
-            const duration = calculateDuration(startTime, endTime);
-
-            const entry = {
-                id: Date.now().toString(),
-                folder: currentFolder,
-                date: date,
-                activityType: activityType,
-                activity: activity,
-                startTime: startTime || null,
-                endTime: endTime || null,
-                duration: duration,
-                photo: null
-            };
-
-            if (photoInput.files && photoInput.files[0]) {
-                const reader = new FileReader();
-                reader.onload = async function(e) {
-                    entry.photo = e.target.result;
-                    const saved = await saveEntry(entry);
-                    if (saved) {
-                        if (!entries[currentFolder]) {
-                            entries[currentFolder] = [];
-                        }
-                        entries[currentFolder].unshift(entry);
-                        displayEntries();
-                        showSuccess('✓ Activité enregistrée avec succès !');
-                        document.getElementById('activityForm').reset();
-                        document.getElementById('activityDate').valueAsDate = new Date();
-                    }
-                };
-                reader.readAsDataURL(photoInput.files[0]);
-            } else {
-                const saved = await saveEntry(entry);
-                if (saved) {
-                    if (!entries[currentFolder]) {
-                        entries[currentFolder] = [];
-                    }
-                    entries[currentFolder].unshift(entry);
-                    displayEntries();
-                    showSuccess('✓ Activité enregistrée avec succès !');
-                    document.getElementById('activityForm').reset();
-                    document.getElementById('activityDate').valueAsDate = new Date();
-                }
-            }
-        });
-
-        // ============ DELETE HANDLER ============
-        async function handleDelete(id, folder) {
-            if (confirm('Voulez-vous vraiment supprimer cette activité ?')) {
-                const deleted = await deleteEntry(id, folder);
-                if (deleted) {
-                    entries[folder] = entries[folder].filter(entry => entry.id !== id);
-                    displayEntries();
-                    showSuccess('✓ Activité supprimée');
-                }
-            }
-        }
-
-        // ============ FILTER HANDLER ============
-        document.getElementById('filterDate').addEventListener('change', function(e) {
-            displayEntries(e.target.value || null);
-        });
-// ============ DOWNLOAD FUNCTION ============
-        function downloadFilteredData() {
-            const folderFilter = document.getElementById('downloadFolder').value;
-            const activityFilter = document.getElementById('downloadActivity').value;
-
-            // Determine which entries to include
-            let entriesToExport = [];
-            
-            if (folderFilter === 'current') {
-                entriesToExport = entries[currentFolder] || [];
-            } else if (folderFilter === 'all') {
-                // Combine all folders
-                Object.values(entries).forEach(folderEntries => {
-                    entriesToExport = entriesToExport.concat(folderEntries);
-                });
-            } else {
-                // Specific folder
-                entriesToExport = entries[folderFilter] || [];
-            }
-
-            // Filter by activity type
-            if (activityFilter !== 'all') {
-                entriesToExport = entriesToExport.filter(entry => entry.activityType === activityFilter);
-            }
-
-            if (entriesToExport.length === 0) {
-                alert('Aucune activité à télécharger avec ces filtres');
-                return;
-            }
-
-            // Sort by date (most recent first)
-            entriesToExport.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-            // Calculate total time
-            let totalMinutes = 0;
-            entriesToExport.forEach(entry => {
-                if (entry.startTime && entry.endTime) {
-                    const [startH, startM] = entry.startTime.split(':').map(Number);
-                    const [endH, endM] = entry.endTime.split(':').map(Number);
-                    let diff = (endH * 60 + endM) - (startH * 60 + startM);
-                    if (diff < 0) diff += 24 * 60;
-                    totalMinutes += diff;
-                }
-            });
-            const totalHours = Math.floor(totalMinutes / 60);
-            const totalMins = totalMinutes % 60;
-
-            // Generate HTML
-            let html = `
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Mémoire+ - Export</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lexend', sans-serif;
-            max-width: 1400px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f9fafb;
-        }
-        h1 {
-            color: #1f2937;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #6b7280;
-            margin-bottom: 15px;
-        }
-        .stats {
-            background: #fef3c7;
-            border: 2px solid #fbbf24;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .stats h2 {
-            color: #92400e;
-            margin-bottom: 10px;
-        }
-        .stats p {
-            font-size: 1.1rem;
-            color: #78350f;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-            vertical-align: top;
-        }
-        th {
-            background: #3b82f6;
-            color: white;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-        }
-        tr:hover {
-            background: #f3f4f6;
-        }
-        .date-cell {
-            font-weight: 600;
-            color: #3b82f6;
-            white-space: nowrap;
-            min-width: 160px;
-        }
-        .folder-cell {
-            background: #f0f9ff;
-            color: #1e40af;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            display: inline-block;
-        }
-        .type-cell {
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            display: inline-block;
-        }
-        .time-cell {
-            white-space: nowrap;
-            color: #6b7280;
-            font-size: 0.95rem;
-        }
-        .duration-cell {
-            font-weight: 600;
-            color: #92400e;
-            white-space: nowrap;
-        }
-        .activity-cell {
-            line-height: 1.6;
-            max-width: 400px;
-        }
-        .photo-cell {
-            width: 100px;
-            text-align: center;
-        }
-        .photo-cell img {
-            max-width: 80px;
-            max-height: 80px;
-            border-radius: 4px;
-            object-fit: cover;
-        }
-        .footer {
-            text-align: center;
-            color: #6b7280;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #e5e7eb;
-        }
-        @media print {
-            body {
-                margin: 0;
-                padding: 20px;
-            }
-            .photo-cell img {
-                max-width: 60px;
-                max-height: 60px;
-            }
-            th {
-                position: relative;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>Mémoire+ - Journal d'Activités</h1>
-    <p class="subtitle">Exporté le ${new Date().toLocaleDateString('fr-FR', { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
-    })}</p>
-    
-    <div class="stats">
-        <h2>📊 Statistiques</h2>
-        <p><strong>Nombre d'activités :</strong> ${entriesToExport.length}</p>
-        ${totalMinutes > 0 ? `<p><strong>Temps total :</strong> ${totalHours}h${totalMins.toString().padStart(2, '0')}</p>` : ''}
-        ${activityFilter !== 'all' ? `<p><strong>Filtre activité :</strong> ${activityFilter}</p>` : ''}
-    </div>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                ${folderFilter === 'all' ? '<th>Dossier</th>' : ''}
-                <th>Type</th>
-                <th>Horaires</th>
-                <th>Durée</th>
-                <th>Description</th>
-                <th>Photo</th>
-            </tr>
-        </thead>
-        <tbody>
-`;
-
-            entriesToExport.forEach(entry => {
-                const timeInfo = entry.startTime || entry.endTime ? 
-                    `${entry.startTime || '?'} - ${entry.endTime || '?'}` : '—';
-                
-                html += `
-            <tr>
-                <td class="date-cell">${formatDate(entry.date)}</td>
-                ${folderFilter === 'all' ? `<td><span class="folder-cell">📁 ${entry.folder}</span></td>` : ''}
-                <td><span class="type-cell">${entry.activityType}</span></td>
-                <td class="time-cell">${timeInfo}</td>
-                <td class="duration-cell">${entry.duration ? formatDuration(entry.duration) : '—'}</td>
-                <td class="activity-cell">${entry.activity.replace(/\n/g, '<br>')}</td>
-                <td class="photo-cell">${entry.photo ? `<img src="${entry.photo}" alt="Photo">` : '—'}</td>
-            </tr>
-`;
-            });
-
-            html += `
-        </tbody>
-    </table>
-
-<div class="footer"> <p>Document généré par Mémoire+ - Journal d'Activités</p> <p style="margin-top: 10px; font-size: 0.9rem;"> <a href="https://github.com/alixb-accessible/memoire-plus" style="color: #3b82f6;"> github.com/alixb-accessible/memoire-plus </a> </p> </div>    
-</body>
-</html>
-`;
-
-            const blob = new Blob([html], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            
-            // Generate filename
-            const date = new Date().toISOString().split('T')[0];
-            const filterPart = activityFilter !== 'all' ? `-${activityFilter.replace(/\s+/g, '_')}` : '';
-            a.download = `memoire-plus-${date}${filterPart}.html`;
-            
-            a.click();
-            URL.revokeObjectURL(url);
-            
-            showSuccess('✓ Données téléchargées !');
-        }
-
-        // ============ INITIALIZE ON PAGE LOAD ============
-        initApp();
-    </script>
-</body>
-</html>
-
+let folders=['general'];let currentFolder='general';let activityTypes={'general':['Réunion','Formation','Événement','Tâche administrative','Autre']};let entries={};document.getElementById('activityDate').valueAsDate=new Date();function loadFolders(){try{const data=localStorage.getItem('memoire_plus_folders');if(data)folders=JSON.parse(data)}catch(e){console.log('Using default folders')}}function saveFolders(){try{localStorage.setItem('memoire_plus_folders',JSON.stringify(folders));return true}catch(e){console.error('Error:',e);return false}}function loadActivityTypes(){try{const data=localStorage.getItem('memoire_plus_activityTypes');if(data)activityTypes=JSON.parse(data)}catch(e){console.log('Using default')}}function saveActivityTypes(){try{localStorage.setItem('memoire_plus_activityTypes',JSON.stringify(activityTypes));return true}catch(e){return false}}function loadEntries(){try{const data=localStorage.getItem('memoire_plus_entries');if(data){entries=JSON.parse(data);Object.keys(entries).forEach(f=>{if(entries[f])entries[f].sort((a,b)=>new Date(b.date)-new Date(a.date))})}}catch(e){entries={}}}function saveAllEntries(){try{localStorage.setItem('memoire_plus_entries',JSON.stringify(entries));return true}catch(e){alert('Erreur sauvegarde');return false}}function initApp(){loadFolders();loadActivityTypes();loadEntries();updateFolderSelect();updateActivityTypeSelect();updateDownloadFilters();displayEntries()}function updateFolderSelect(){document.getElementById('folderSelect').innerHTML=folders.map(f=>`<option value="${f}"${f===currentFolder?' selected':''}>📁 ${f.charAt(0).toUpperCase()+f.slice(1)}</option>`).join('')}function updateActivityTypeSelect(){const sel=document.getElementById('activityType');const types=activityTypes[currentFolder]||[];sel.innerHTML='<option value="">-- Choisir --</option>'+types.map(t=>`<option value="${t}">${t}</option>`).join('')}function updateDownloadFilters(){const fsel=document.getElementById('downloadFolder');const cur=`<option value="current">Dossier actuel (${currentFolder.charAt(0).toUpperCase()+currentFolder.slice(1)})</option>`;fsel.innerHTML=cur+'<option value="all">Tous les dossiers</option>'+folders.map(f=>`<option value="${f}">📁 ${f.charAt(0).toUpperCase()+f.slice(1)}</option>`).join('');const asel=document.getElementById('downloadActivity');const allTypes=new Set();Object.values(activityTypes).forEach(ts=>ts.forEach(t=>allTypes.add(t)));asel.innerHTML='<option value="all">Toutes les activités</option>'+Array.from(allTypes).sort().map(t=>`<option value="${t}">${t}</option>`).join('')}document.getElementById('folderSelect').addEventListener('change',e=>{currentFolder=e.target.value;updateActivityTypeSelect();updateDownloadFilters();displayEntries()});function openNewFolderModal(){document.getElementById('newFolderModal').classList.add('active');document.getElementById('newFolderName').value='';document.getElementById('newFolderName').focus()}function closeNewFolderModal(){document.getElementById('newFolderModal').classList.remove('active')}function createNewFolder(){const name=document.getElementById('newFolderName').value.trim();if(!name){alert('Entrez un nom');return}const key=name.toLowerCase().replace(/\s+/g,'_');if(folders.includes(key)){alert('Existe déjà');return}folders.push(key);activityTypes[key]=['Activité'];if(saveFolders()&&saveActivityTypes()){currentFolder=key;updateFolderSelect();updateActivityTypeSelect();updateDownloadFilters();closeNewFolderModal();showSuccess('✓ Dossier créé !')}}function openNewActivityModal(){document.getElementById('newActivityModal').classList.add('active');document.getElementById('newActivityName').value='';document.getElementById('newActivityName').focus()}function closeNewActivityModal(){document.getElementById('newActivityModal').classList.remove('active')}function createNewActivity(){const name=document.getElementById('newActivityName').value.trim();if(!name){alert('Entrez un nom');return}if(!activityTypes[currentFolder])activityTypes[currentFolder]=[];if(activityTypes[currentFolder].includes(name)){alert('Existe déjà');return}activityTypes[currentFolder].push(name);if(saveActivityTypes()){updateActivityTypeSelect();updateDownloadFilters();document.getElementById('activityType').value=name;closeNewActivityModal();showSuccess('✓ Activité créée !')}}function calculateDuration(s,e){if(!s||!e)return null;const[sh,sm]=s.split(':').map(Number);const[eh,em]=e.split(':').map(Number);let diff=(eh*60+em)-(sh*60+sm);if(diff<0)diff+=1440;const h=Math.floor(diff/60);const m=diff%60;if(h===0)return`${m}min`;if(m===0)return`${h}h`;return`${h}h${m.toString().padStart(2,'0')}`}function parseManualDuration(str){if(!str)return null;const hm=str.match(/(\d+(?:\.\d+)?)\s*h/i);const mm=str.match(/(\d+)\s*m/i);let total=0;if(hm)total+=parseFloat(hm[1])*60;if(mm)total+=parseInt(mm[1]);if(total===0)return null;const h=Math.floor(total/60);const m=Math.round(total%60);if(h===0)return`${m}min`;if(m===0)return`${h}h`;return`${h}h${m.toString().padStart(2,'0')}`}function formatDuration(d){return d?`⏱️ ${d}`:''}function displayEntries(filterDate=null){const list=document.getElementById('entriesList');const fentries=entries[currentFolder]||[];let filtered=fentries;if(filterDate)filtered=fentries.filter(e=>e.date===filterDate);if(filtered.length===0){list.innerHTML='<div class="empty-state"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:80px;height:80px;margin-bottom:20px;opacity:0.5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><p style="font-size:1.2rem;margin-bottom:10px;">Aucune activité</p><p>Ajoutez votre première activité</p></div>';return}list.innerHTML=filtered.map(e=>`<div class="entry-card"><div class="entry-header"><div><div class="entry-date">${formatDate(e.date)}</div><div class="entry-meta"><span class="entry-type">${escapeHtml(e.activityType)}</span>${e.duration?`<span class="entry-duration">${formatDuration(e.duration)}</span>`:''}</div>${e.startTime||e.endTime?`<div style="color:#6b7280;font-size:0.9rem;margin-top:5px;">${e.startTime?`Début: ${e.startTime}`:''} ${e.startTime&&e.endTime?' | ':''}${e.endTime?`Fin: ${e.endTime}`:''}</div>`:''}</div><button class="delete-btn" onclick="handleDelete('${e.id}')">Supprimer</button></div><div class="entry-activity">${escapeHtml(e.activity)}</div>${e.photo?`<img src="${e.photo}" alt="Photo" class="entry-image">`:''}</div>`).join('')}function escapeHtml(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}function formatDate(ds){const d=new Date(ds+'T00:00:00');return d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}function showSuccess(msg){const s=document.getElementById('successMessage');s.textContent=msg;s.style.display='block';window.scrollTo({top:0,behavior:'smooth'});setTimeout(()=>s.style.display='none',3000)}document.getElementById('activityForm').addEventListener('submit',function(ev){ev.preventDefault();const date=document.getElementById('activityDate').value;const type=document.getElementById('activityType').value;const desc=document.getElementById('activityDescription').value;const start=document.getElementById('startTime').value;const end=document.getElementById('endTime').value;const manual=document.getElementById('manualDuration').value;const photo=document.getElementById('activityPhoto');if(!type){alert('Choisissez un type');return}let dur=null;if(manual)dur=parseManualDuration(manual);else if(start&&end)dur=calculateDuration(start,end);const entry={id:Date.now().toString(),folder:currentFolder,date:date,activityType:type,activity:desc,startTime:start||null,endTime:end||null,duration:dur,photo:null};if(photo.files&&photo.files[0]){const r=new FileReader();r.onload=e=>{entry.photo=e.target.result;saveEntry(entry)};r.readAsDataURL(photo.files[0])}else saveEntry(entry)});function saveEntry(e){if(!entries[currentFolder])entries[currentFolder]=[];entries[currentFolder].unshift(e);if(saveAllEntries()){displayEntries();showSuccess('✓ Activité enregistrée !');document.getElementById('activityForm').reset();document.getElementById('activityDate').valueAsDate=new Date()}}function handleDelete(id){if(confirm('Supprimer ?')){entries[currentFolder]=entries[currentFolder].filter(e=>e.id!==id);if(saveAllEntries()){displayEntries();showSuccess('✓ Supprimée')}}}document.getElementById('filterDate').addEventListener('change',e=>displayEntries(e.target.value||null));function downloadFilteredData(){const ff=document.getElementById('downloadFolder').value;const af=document.getElementById('downloadActivity').value;let exp=[];if(ff==='current')exp=entries[currentFolder]||[];else if(ff==='all')Object.values(entries).forEach(fe=>exp=exp.concat(fe));else exp=entries[ff]||[];if(af!=='all')exp=exp.filter(e=>e.activityType===af);if(exp.length===0){alert('Aucune activité');return}exp.sort((a,b)=>new Date(b.date)-new Date(a.date));let totalMin=0;exp.forEach(e=>{if(e.duration){const m=e.duration.match(/(\d+)h(\d+)?|(\d+)min/);if(m){const h=parseInt(m[1]||0);const min=parseInt(m[2]||m[3]||0);totalMin+=h*60+min}}});const th=Math.floor(totalMin/60);const tm=totalMin%60;let html=`<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Mémoire+ - Export</title><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet"><style>body{font-family:'Lexend',sans-serif;max-width:1400px;margin:40px auto;padding:20px;background:#f9fafb}h1{color:#1f2937;text-align:center;margin-bottom:10px}.subtitle{text-align:center;color:#6b7280;margin-bottom:15px}.stats{background:#fef3c7;border:2px solid #fbbf24;padding:20px;border-radius:12px;margin-bottom:30px;text-align:center}.stats h2{color:#92400e;margin-bottom:10px}.stats p{font-size:1.1rem;color:#78350f}table{width:100%;border-collapse:collapse;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:30px}th,td{padding:12px;text-align:left;border-bottom:1px solid #e5e7eb;vertical-align:top}th{background:#3b82f6;color:white;font-weight:600}tr:hover{background:#f3f4f6}.date-cell{font-weight:600;color:#3b82f6;white-space:nowrap;min-width:160px}.folder-cell{background:#f0f9ff;color:#1e40af;padding:4px 10px;border-radius:4px;font-size:0.9rem;font-weight:500;display:inline-block}.type-cell{background:#dbeafe;color:#1e40af;padding:4px 10px;border-radius:4px;font-size:0.9rem;font-weight:500;display:inline-block}.time-cell{white-space:nowrap;color:#6b7280;font-size:0.95rem}.duration-cell{font-weight:600;color:#92400e;white-space:nowrap}.activity-cell{line-height:1.6;max-width:400px}.photo-cell{width:100px;text-align:center}.photo-cell img{max-width:80px;max-height:80px;border-radius:4px;object-fit:cover}.footer{text-align:center;color:#6b7280;margin-top:40px;padding-top:20px;border-top:2px solid #e5e7eb}@media print{body{margin:0;padding:20px}.photo-cell img{max-width:60px;max-height:60px}}</style></head><body><h1>Mémoire+ - Journal d'Activités</h1><p class="subtitle">Exporté le ${new Date().toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</p><div class="stats"><h2>Statistiques</h2><p><strong>Nombre d'activités :</strong> ${exp.length}</p>${totalMin>0?<p><strong>Temps total :</strong> ${th}h${tm.toString().padStart(2,'0')}</p>:''}${af!=='all'?<p><strong>Filtre activité :</strong> ${af}</p>:''}</div><table><thead><tr><th>Date</th>${ff==='all'?'<th>Dossier</th>':''}<th>Type</th><th>Horaires</th><th>Durée</th><th>Description</th><th>Photo</th></tr></thead><tbody>;exp.forEach(e=>{const ti=e.startTime||e.endTime?${e.startTime||'?'} - ${e.endTime||'?'}:'—';html+=<tr><td class="date-cell">${formatDate(e.date)}</td>${ff==='all'?<td><span class="folder-cell">📁 ${e.folder}</span></td>:''}<td><span class="type-cell">${escapeHtml(e.activityType)}</span></td><td class="time-cell">${ti}</td><td class="duration-cell">${e.duration?formatDuration(e.duration):'—'}</td><td class="activity-cell">${escapeHtml(e.activity).replace(/\n/g,'<br>')}</td><td class="photo-cell">${e.photo?<img src="${e.photo}" alt="Photo">:'—'}</td></tr>});html+=</tbody></table><div class="footer"><p>Document généré par Mémoire+ - Journal d'Activités</p><p style="margin-top:10px;font-size:0.9rem;"><a href="https://github.com/alixb-accessible/memoire-plus" style="color:#3b82f6;">github.com/alixb-accessible/memoire-plus</a></p></div></body></html>;const blob=new Blob([html],{type:'text/html'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;const d=new Date().toISOString().split('T')[0];const fp=af!=='all'?-${af.replace(/\s+/g,'_')}:'';a.download=memoire-plus-d{d} d{fp}.html`;a.click();URL.revokeObjectURL(url);showSuccess('✓ Téléchargé !')}initApp(); </script>
+</body> </html>
 
